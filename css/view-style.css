@@ -1,0 +1,177 @@
+.navigation-back .btn{
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #331201;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 20px;
+    
+}
+
+
+
+.title__view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    
+}
+
+.title__view h2{
+    font-size: 1.5em;
+    color: #331201;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(87, 82, 33, .4);    
+    text-align: center;
+}
+
+
+.item__box{
+    max-width: 380px;
+       
+}
+.item__box img{
+
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+
+}
+
+.produtos{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+.item__description h3,
+.croissant_description h3{
+    font-size: 1em;
+    color: #331201;
+    font-weight: 800;
+    text-transform: uppercase; 
+    padding: 10px 8px;
+    border-bottom: 1px solid #d1aa67ab; 
+ 
+}
+
+.item__description p,
+.croissant_description p{
+    font-size: 0.75em;
+    color: #331201;
+    opacity: .6;
+    text-transform: uppercase;
+    max-width: 290px;
+    padding: 10px 6px;
+    background-color: #f7d494;
+    
+}
+
+.item__description span{
+    font-size: 1.5rem;
+    color: #504d3b;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px;
+    
+    
+   
+}
+.croissant_description span{
+    font-size: 1rem;
+    color: #504d3b;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-left: 6px;
+}
+
+.croissant_description .tamanho{
+    font-size: 0.65rem;
+}
+
+
+.title{
+    text-align: center;
+    
+}
+.title a{
+    text-decoration: none;
+    padding: 8px 18px;
+    background-color: #331201;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    top: -20px;
+}
+
+.produtos_croissant{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+.produtos_croissant,
+.produto_croissant-sal,
+.produto_croissant-doce,
+.produto_croques,
+.produtos_brownie,
+.produto_outros{
+    padding: 0 20px;
+}
+.produtos_brownie,
+.produto_croissant-doce,
+.produto_croissant-sal,
+.produto_croques,
+.produto_outros{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+    justify-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+
+
+@media (max-width: 1024px){
+    .produtos{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .produtos_croissant{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;    
+    }
+
+}
+
+
+@media (max-width: 600px){
+    .produtos{
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        
+    }
+
+}
+
